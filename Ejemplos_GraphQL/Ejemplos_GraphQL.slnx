@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/Inventario/">
+    <Project Path="Ejemplo_Query_Personas/Ejemplo_Query_Personas.csproj" Id="489957b0-4576-4159-a05d-5f6d670b2ee4" />
+    <Project Path="Ejemplo_WebAPI_Inventario/Ejemplo_WebAPI_Inventario.csproj" />
+  </Folder>
+  <Folder Name="/Inventario/Docs/">
+    <File Path="Docs/Readme.md" />
+  </Folder>
+</Solution>
