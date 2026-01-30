@@ -1,4 +1,5 @@
 ﻿using Ejemplo_WebAPI_Inventario.Domain;
+using Ejemplo_WebAPI_Inventario.GraphQL.Inputs;
 
 namespace Ejemplo_WebAPI_Inventario.GraphQL.Mutations;
 
