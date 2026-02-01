@@ -1,9 +1,12 @@
 <Solution>
-  <Folder Name="/Inventario/">
-    <Project Path="Ejemplo_Query_Personas/Ejemplo_Query_Personas.csproj" Id="489957b0-4576-4159-a05d-5f6d670b2ee4" />
-    <Project Path="Ejemplo_WebAPI_Inventario/Ejemplo_WebAPI_Inventario.csproj" />
+  <Folder Name="/personas/">
+    <Project Path="Ejemplo_GraphQL_Personas/Ejemplo_GraphQL_Personas.csproj" Id="de82dbdb-f466-4061-9458-4245f6dbd228" />
   </Folder>
-  <Folder Name="/Inventario/Docs/">
-    <File Path="Docs/Readme.md" />
+  <Folder Name="/personas/Consultas/">
+    <Project Path="Ejemplo_GraphQL_Personas_MutationUpdate/Ejemplo_GraphQL_Personas_MutationUpdate.csproj" Id="d3aafe40-d144-4200-bb95-ae8e3ffa6832" />
+    <Project Path="Ejemplo_GraphQL_Personas_QueryALL/Ejemplo_GraphQL_Personas_QueryALL.csproj" Id="d63dfebf-caa4-4dd7-8c88-d5c21a94bf2e" />
+  </Folder>
+  <Folder Name="/personas/Docs/">
+    <File Path="Ejemplo_GraphQL_Personas_Docs/Readme.md" />
   </Folder>
 </Solution>
