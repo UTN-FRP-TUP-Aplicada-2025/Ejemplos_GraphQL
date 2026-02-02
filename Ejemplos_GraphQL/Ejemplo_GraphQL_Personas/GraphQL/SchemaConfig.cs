@@ -28,8 +28,11 @@ public static class SchemaConfig
             .AddMutationType<Mutation>()//(d => d.Name("Mutation"))
 
             //subscriptions
-            .AddSubscriptionType<Subscription>() // (d => d.Name("Subscription"))
-                .AddType<PersonasSubscription>()
+            //.AddSubscriptionType<Subscription>() // (d => d.Name("Subscription"))
+            //    .AddType<PersonasSubscription>()
+            .AddSubscriptionType<PersonasSubscription>() // (d => d.Name("Subscription
+            .AddType<PersonasSubscription>()
+
             .AddInMemorySubscriptions() //y canal de eventos
 
             //types

@@ -4,6 +4,6 @@ namespace Ejemplo_GraphQL_Personas.GraphQL;
 
 public class Subscription
 {
-    public PersonasSubscription Personas( [Service] PersonasSubscription subscription)  => subscription;
+    public PersonasSubscription Personas([Service] PersonasSubscription subscription)=> subscription;
 
 }

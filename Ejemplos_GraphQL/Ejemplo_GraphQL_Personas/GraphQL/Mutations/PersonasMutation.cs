@@ -35,12 +35,13 @@ public class PersonasMutation
             new Persona { DNI = input.DNI, Nombre = input.Nombre }
         );
 
-        await _eventSender.SendAsync("PersonaActualizado",
+        await _eventSender.SendAsync("OnPersonaActualizado",
             new PersonaActualizadoEvent
             {
                 Dni = persona.DNI,
                 Nombre = persona.Nombre
             });
+
 
         return persona;
     }
