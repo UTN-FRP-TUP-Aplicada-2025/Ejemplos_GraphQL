@@ -1,5 +1,6 @@
 ﻿using Ejemplo_GraphQL_Personas.Data;
 using Ejemplo_GraphQL_Personas.Domain;
+using Ejemplo_GraphQL_Personas.GraphQL.Subscriptions;
 using Ejemplo_GraphQL_Personas.Services;
 using Ejemplo_WebAPI_Inventario.GraphQL.Events;
 using Ejemplo_WebAPI_Inventario.GraphQL.Inputs;
@@ -35,7 +36,8 @@ public class PersonasMutation
             new Persona { DNI = input.DNI, Nombre = input.Nombre }
         );
 
-        await _eventSender.SendAsync("OnPersonaActualizado",
+        await _eventSender.SendAsync(
+            nameof(PersonasSubscription.OnPersonaActualizado), 
             new PersonaActualizadoEvent
             {
                 Dni = persona.DNI,

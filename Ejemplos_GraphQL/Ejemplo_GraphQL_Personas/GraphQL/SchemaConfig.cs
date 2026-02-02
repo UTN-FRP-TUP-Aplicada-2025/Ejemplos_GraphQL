@@ -15,7 +15,7 @@ public static class SchemaConfig
             //
             .AddScoped<PersonasQuery>() //Registra el servicio en el contenedor DI
             .AddScoped<PersonasMutation>() //Registra el servicio en el contenedor DI
-            .AddScoped<PersonasSubscription>() //Registra el servicio en el contenedor DI
+            //.AddScoped<PersonasSubscription>() //Registra el servicio en el contenedor DI
             
             //                                       
             .AddGraphQLServer()
@@ -28,18 +28,18 @@ public static class SchemaConfig
             .AddMutationType<Mutation>()//(d => d.Name("Mutation"))
 
             //subscriptions
-            //.AddSubscriptionType<Subscription>() // (d => d.Name("Subscription"))
+            //.AddSubscriptionType<PersonasSubscription>()
+            //    .AddSubscriptionType<Subscription>() // (d => d.Name("Subscription"))
+
+            .AddSubscriptionType<Subscription>()
+
+            //.AddSubscriptionType<Subscription>() // Registra la raíz
+            //   .AddTypeExtension<PersonasSubscription>() // Extiende el tipo, no lo añade como objeto simple
             //    .AddType<PersonasSubscription>()
-            .AddSubscriptionType<PersonasSubscription>() // (d => d.Name("Subscription
-            .AddType<PersonasSubscription>()
 
             .AddInMemorySubscriptions() //y canal de eventos
 
             //types
             .AddType<PersonaType>();
-            
-            // Simple way if you only have ONE query/mutation class
-            //.AddQueryType<PersonasQuery>()
-            //.AddMutationType<PersonasMutation>()
     }
 }
